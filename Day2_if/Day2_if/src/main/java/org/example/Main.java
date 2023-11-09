@@ -8,14 +8,29 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        task2();
+        sample4();
 
+    }
+
+    public static void sample4() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Ievadiet vārdu!");
+        String b = sc.nextLine();
+
+        int len = b.length(); //šis nozīmē simbolu skaits
+
+        if(b.equals("bbb") || b.length()==3) { // || nozīmē vai - jāizpildās vienam no nosacījumiem && nozīmē un - jāizpildas abiem
+            System.out.println("ir vienāds");
+        }else{
+            System.out.println("nav vienāds");
+
+        }
     }
     public static void task2() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Ievadiet skaitli!");
         int a = sc.nextInt();
-
         if (a > 5) {
             System.out.println("###");
         } else {
