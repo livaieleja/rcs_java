@@ -8,10 +8,21 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        sample3();
+        task2();
 
     }
+    public static void task2() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ievadiet skaitli!");
+        int a = sc.nextInt();
 
+        if (a > 5) {
+            System.out.println("###");
+        } else {
+            System.out.println("####");
+        }
+
+    }
     public static void sample3(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Ievadiet skaitli!");
