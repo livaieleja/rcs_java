@@ -4,8 +4,61 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        task2 ();
+        task3 ();
     }
+
+    public static void task3() {
+        Scanner sc = new Scanner(System.in);
+
+        int b = 0;
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Lūdzu ievadiet skaitli!");
+            int number = sc.nextInt();
+            if (number > 0) {
+                b = b + number;
+            } else {
+                System.out.println("Kļūda");
+            }
+            System.out.println("Simbolu virknes summma ir " + b);
+        }
+
+    }
+
+
+
+
+    public static void sample3() { //6x var vadīt skaitli un katru skaitli ievadot parādās attiecīgais paziņojums
+        Scanner sc = new Scanner(System.in);
+
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Lūdzu ievadiet skaitli!");
+            int number = sc.nextInt();
+
+            if(number == 0) {
+                System.out.println("Kļūda");
+            }else if(number == 4) {
+                System.out.println("Hello!");
+            }else{
+                System.out.println("Hello! 2");
+            }
+        }
+    }
+
+    public static void sample4() { //Ja ievada 5 tad parāda 6x hello, ja citu skaitli, tad Kļūda!
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Lūdzu ievadiet skaitli!");
+        int number = sc.nextInt();
+
+        if(number == 5) {
+            for (int i = 0; i < 5; i++) {
+                System.out.println("Hello");
+            }
+        }else{
+            System.out.println("Kļūda");
+        }
+    }
+
 
     public static void task2() {
         Scanner sc = new Scanner(System.in);
