@@ -4,8 +4,25 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        sample6 ();
+        task4 ();
     }
+
+    public static void task4() {
+
+        Scanner sc = new Scanner(System.in);
+        String word = "suns";
+        String input = "";
+
+        while (!input.equals(word)) {
+            System.out.println("Uzmini vārdu!");
+            input = sc.nextLine();
+
+            if (!input.equals("word")) {
+                System.out.println("Mini vēlreiz");
+            }
+        }
+        System.out.println("Vārds ir pazreizs!");
+        }
 
     public static void sample6() {
         //Uztaisīt ciklu, kas darbojas kamēr lietotājs neievada negatīvu skaitli
