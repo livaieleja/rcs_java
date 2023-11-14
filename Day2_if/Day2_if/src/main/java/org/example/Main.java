@@ -8,8 +8,23 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        hometask1();
+        hometask2();
 
+    }
+
+    public static void hometask2() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Ievadiet simbolu virkni!");
+        String b = sc.nextLine();
+
+        int len = b.length();
+
+        if(b.length()>=5 && b.length()<=10) {
+            System.out.println("Ok!");
+        }else{
+            System.out.println("Not ok!");
+        }
     }
 
     public static void hometask1() {
