@@ -4,7 +4,42 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        task3 ();
+        sample6 ();
+    }
+
+    public static void sample6() {
+        //Uztaisīt ciklu, kas darbojas kamēr lietotājs neievada negatīvu skaitli
+        //Izvadīt skaitļu summu
+
+        Scanner sc = new Scanner(System.in);
+
+        int sum = 0;
+        int input = 0;
+
+        while(input >= 0){
+
+            System.out.println("Ievadiet skaitli!");
+            input = sc.nextInt();
+            if (input<0){
+                break;
+            }
+
+            sum = sum + input;
+
+        }
+        System.out.println("Summa ir " + sum);
+    }
+
+    public static void sample5() {
+    //cikls darbojas līdz lietotājs uzraksta vārdu exit
+        Scanner sc = new Scanner(System.in);
+        String input = "" ; //simbolu virknes versija, definējot 0 vērtību/tukšumu - nepieciešams
+
+        while(!input.equals("exit")){ // ! nozīmē pagriezt nosacījumu uz otru pusti, tad ja ir equals + ! tātad, lai nav vienāds.
+            System.out.println("Hello world!");
+            System.out.println("Ievadīt simbolu virkni!");
+            input = sc.nextLine();
+        }
     }
 
     public static void task3() {
@@ -19,12 +54,9 @@ public class Main {
             } else {
                 System.out.println("Kļūda");
             }
-            System.out.println("Simbolu virknes summma ir " + b);
         }
-
+        System.out.println("Summma ir " + b);
     }
-
-
 
 
     public static void sample3() { //6x var vadīt skaitli un katru skaitli ievadot parādās attiecīgais paziņojums
