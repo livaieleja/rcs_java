@@ -4,8 +4,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        hometask2();
+        hometask1();
     }
+
+    public static void hometask1() {
+
+        String symbol = "";
+        for (int i =0; i <5; i++){
+            symbol = symbol + "$";
+            System.out.println(symbol);
+        }
+    }
+
 
     public static void hometask2() {
 
