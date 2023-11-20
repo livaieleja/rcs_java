@@ -2,7 +2,7 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-            task1();
+            task1( "aaa", "bbb", "ccc");
             samplewithparams( 2,  5);
             samplewithparams( 99, -15);
     }
@@ -11,11 +11,9 @@ public class Main {
         System.out.println(a + b);
     }
 
-    public static void task1() {
-        String a = "aaa";
-        String b = "bbb";
-        String c = "ccc";
+    public static void task1(String c, String d, String e) {
+        System.out.println(e + d + c);
 
-        System.out.println(c + b + a);
     }
+
 }
