@@ -4,8 +4,26 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        task4 ();
+        hometask2();
     }
+
+    public static void hometask2() {
+
+        Scanner sc = new Scanner(System.in);
+
+        int sum = 0;
+        int input = 0;
+
+        while (input >= sum){
+            sum = sum + input;
+            System.out.println("Ievadi skaitli");
+            input = sc.nextInt();
+            if (input <= sum){
+                break;
+            }
+        }
+    }
+
 
     public static void task4() {
 
