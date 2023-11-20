@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        hometask1();
+        hometask22();
     }
 
     public static void hometask1() {
@@ -34,6 +34,21 @@ public class Main {
         }
     }
 
+    public static void hometask22() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Ievadiet skaitli!");
+        int input = sc.nextInt ();
+        int last = Integer.MIN_VALUE;
+
+        while (input > last){
+            System.out.println(input);
+            last = input;
+
+            System.out.println("Ievadiet skaitli!");
+            input = sc.nextInt ();
+        }
+    }
 
     public static void task4() {
 
