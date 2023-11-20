@@ -2,12 +2,13 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-    //       task1( "aaaaaaaaa", "bbbb", "cccc");
-             task2(7);
-    //        samplewithparams( 2,  5);
-    //        samplewithparams( 99, -15);
+        //       task1( "aaaaaaaaa", "bbbb", "cccc");
+                 task2(-2);
+        //        samplewithparams( 2,  5);
+        //        samplewithparams( 99, -15);
     }
-    public static void samplewithparams(int a, int b){
+
+    public static void samplewithparams(int a, int b) {
         System.out.println("Summa ir:");
         System.out.println(a + b);
     }
@@ -16,19 +17,22 @@ public class Main {
 
         if (e.length() + d.length() + c.length() >= 15) {
             System.out.println(c + d);
-        }else{
-            System.out.println(e+d+c);
+        } else {
+            System.out.println(e + d + c);
 
         }
     }
 
     public static void task2(int l) {
 
-        String symbol = "";
-        for (int i =0; i < l; i++){
-            symbol = symbol + "$";
-            System.out.println(symbol);
+            String symbol = "";
+            for (int i = 0; i < l; i++) {
+                if (l > 0) {
+                symbol = symbol + "$";
+                System.out.println(symbol);
+            }else{
+                    System.out.println("$");
+                }
+            }
         }
     }
-
-}
