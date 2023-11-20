@@ -2,9 +2,10 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-            task1( "aaaaaaaaa", "bbbb", "cccc");
-            samplewithparams( 2,  5);
-            samplewithparams( 99, -15);
+    //       task1( "aaaaaaaaa", "bbbb", "cccc");
+             task2(7);
+    //        samplewithparams( 2,  5);
+    //        samplewithparams( 99, -15);
     }
     public static void samplewithparams(int a, int b){
         System.out.println("Summa ir:");
@@ -18,6 +19,15 @@ public class Main {
         }else{
             System.out.println(e+d+c);
 
+        }
+    }
+
+    public static void task2(int l) {
+
+        String symbol = "";
+        for (int i =0; i < l; i++){
+            symbol = symbol + "$";
+            System.out.println(symbol);
         }
     }
 
