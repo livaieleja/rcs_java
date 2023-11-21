@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int result = task2(2,7);
+        int result = task22(6,19);
         System.out.println(result);
     //    System.out.println(combineStrings("e"));
     //    int a = sum();
@@ -13,7 +13,12 @@ public class Main {
     //    task1 ("JJ", 5);
     }
 
-
+    public static int task22 (int a,int b){
+        if (a>b){
+            return a;
+        }
+        return b;
+    }
     public static int task2 (int a, int b){
         if (a > b) {
             return a;
