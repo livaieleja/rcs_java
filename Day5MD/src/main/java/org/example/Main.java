@@ -11,7 +11,7 @@ public class Main {
         public static int hometask() {
             Scanner sc = new Scanner(System.in);
 
-            System.out.println("Lūdzu norādiet ciparu, kuru darbību vēlaties veikt: 1 - saskaitīšanu, 2 - atņemšanu, 3 - reizināšanu, 4 - dalīšanu.");
+            System.out.println("Lūdzu norādiet ciparu, kuru darbību vēlaties veikt: 1 - saskaitīšanu, 2 - atņemšanu, 3 - reizināšanu, 4 - dalīšanu");
             int choice = sc.nextInt ();
 
             System.out.println("Lūdzu, ievadiet pirmo skaitli!");
