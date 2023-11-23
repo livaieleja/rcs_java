@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Tasks.biggestNumber(4));
-    //    Samples.sample1();
-    //    int a = Samples.sum();
+    //    System.out.println(Tasks.biggestNumber(4));
+       Samples.sample1();
+        int a = Samples.sum();
     //    int result = task22(6,19);
     //    System.out.println(result);
     //    System.out.println(combineStrings("e"));
