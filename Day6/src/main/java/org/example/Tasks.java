@@ -15,4 +15,30 @@ public class Tasks {
 
         return sum / count;
     }
+
+    public static void run (){
+        task2();
+    }
+    private static void task2() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Ievadiet skaitli!");
+        int input = sc.nextInt();
+        int smallest = Integer.MAX_VALUE;
+
+        while (true) {
+            smallest = input;
+
+            System.out.println("Ievadiet skaitli!");
+            input = sc.nextInt();
+
+            if (input >= smallest) {
+                System.out.println("Hello world!");
+            }else{
+                break;
+            }
+        }
+    }
 }
+
+

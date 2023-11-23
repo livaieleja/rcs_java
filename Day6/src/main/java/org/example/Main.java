@@ -4,7 +4,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Tasks.averagenumber(3));
+        Tasks.run();
+     //   System.out.println(Tasks.averagenumber(3));
+
+
+
+
 
     }
 }
+
