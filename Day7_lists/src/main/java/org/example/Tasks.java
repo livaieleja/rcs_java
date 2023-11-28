@@ -18,29 +18,36 @@ public class Tasks {
         return biggest;
     }
 
-    public static int task2() {
-        Scanner sc = new Scanner(System.in);
+    public static void task2() {
         List<String> stringList = new ArrayList<>();
-
         System.out.println("Izvēlieties, cik vērtības pievienot String tipa listam!");
-        int values = sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int values;
+        try {
+            values = sc.nextInt();
+        }catch(Exception e){
+            values = 2;
+            System.out.println("Nepareiza ievade, automātiski piešķirts garums 2");
+        }
 
         for (int i = 0; i < values; i++) {
             System.out.println("Ievadiet vērtību");
             stringList.add(sc.next());
         }
 
-        System.out.println("Izvēlieties vai izvadīt visas vērtības, ievadot ciparu - 0 vai kādu konkrētu vērtību norādot ciparu sākot ar 1!");
-        int choice = sc.nextInt();
+        System.out.println("Ievadiet 1, ja gribas izvadīt visas vērtības, 2 ja gribat izvadīt konkrētu vērtību!");
+        String choice = sc.next();
 
-        if (choice == 0) {
-            return stringList.size();
-    }else{
-        if (choice >0 && choice<=stringList.size()) {
-            return "Vērtība ir" + stringList.add(choice);
-        }else{
-            return "Vērtība neeksistē!";
-        }
+        if (choice.equals("1")) {
+            for (String el : stringList) {
+                System.out.println(el);
+            }
+        } else if (choice.equals("2")) {
+            System.out.println("Ievadiet indeksu");
+            int i = sc.nextInt();
+            System.out.println(stringList.get(i));
+        } else {
+            System.out.println("Nepareiza ievade!");
         }
     }
 }
