@@ -26,13 +26,8 @@ public class Tasks {
         int values = sc.nextInt();
 
         for (int i = 0; i < values; i++) {
-            stringList.add("kaķis");
-            stringList.add("suns");
-            stringList.add("pīle");
-            stringList.add("zaķis");
-            stringList.add("vista");
-            stringList.add("cālis");
-            stringList.add("zirgs");
+            System.out.println("Ievadiet vērtību");
+            stringList.add(sc.next());
         }
 
         System.out.println("Izvēlieties vai izvadīt visas vērtības, ievadot ciparu - 0 vai kādu konkrētu vērtību norādot ciparu sākot ar 1!");
