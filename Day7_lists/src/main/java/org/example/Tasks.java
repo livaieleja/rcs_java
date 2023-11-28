@@ -25,7 +25,7 @@ public class Tasks {
         int values;
         try {
             values = sc.nextInt();
-        }catch(Exception e){
+        } catch (Exception e) {
             values = 2;
             System.out.println("Nepareiza ievade, automātiski piešķirts garums 2");
         }
@@ -49,5 +49,18 @@ public class Tasks {
         } else {
             System.out.println("Nepareiza ievade!");
         }
+    }
+
+    public static int task3() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ievadiet skaitli!");
+        int number;
+        try {
+            number = sc.nextInt();
+        }
+        catch (Exception e) {
+            return 0;
+        }
+        return number;
     }
 }
