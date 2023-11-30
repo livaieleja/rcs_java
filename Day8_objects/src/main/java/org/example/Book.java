@@ -6,6 +6,13 @@ public class Book {
     public String title;
     public String year;
 
+
+//    public Book(String name, String lastName, String title, int year){ // šo sauc par konstruktoru!!!
+//    this.name = name;
+//    this.lastName = lastName;
+//    this.year = year;
+//}
+
     public void print(){
         System.out.println(name + " " + lastName);
         System.out.println(title);

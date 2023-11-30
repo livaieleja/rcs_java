@@ -38,24 +38,26 @@ public class Main {
             bk2.print();
         }
 
+        public static void task3 (){
+
+    }
+
         public static void task2() {
             List<Student> studentLst = new ArrayList<>();
             Scanner sc = new Scanner(System.in);
-            Student st = new Student();
 
             for (int i = 0; i < 5; i++) {
                 System.out.println("Ievadiet studenta vārdu!");
-                st.name = sc.nextLine();
+                String name = sc.nextLine();
                 System.out.println("Ievadiet studenta uzvārdu!");
-                st.lastName = sc.nextLine();
+                String lastName = sc.nextLine();
                 System.out.println("Ievadiet studenta kursu!");
-                st.course = sc.nextInt();
+                int course = sc.nextInt();
 
-                studentLst.add(st.name, st.lastName, st.course);
+                studentLst.add(new Student(name, lastName, course));
             }
-
-                for (var s: studentLst){
-                    s.print();
+                for (int i =0; i< studentLst.size(); i++){
+                    studentLst.get(i).print();
             }
         }
 
