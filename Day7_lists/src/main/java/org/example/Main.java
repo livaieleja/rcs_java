@@ -6,6 +6,8 @@ public class Main {
         double [] b = {9,5,2,32,3.4,9};
     //    System.out.println(Tasks.task1(b));
     //    Samples.run();
-        Tasks.task3();
+    //    Tasks.task2();
+        System.out.println(Homework.hometaskDay7());
+
     }
 }

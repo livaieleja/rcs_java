@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Scanner;
+
 public class Homework {
 
     public static int task1(int[] arr) {
@@ -23,4 +25,21 @@ public class Homework {
         }
         return sum;
     }
-}
+
+    public static int hometaskDay7() {
+        Scanner sc = new Scanner(System.in);
+        int number;
+
+        while (true) {
+            System.out.println("Lūdzu, ievadiet skaitli!");
+            String input = sc.nextLine();
+
+            try {
+                number = Integer.parseInt(input);
+                System.out.println(number);
+            } catch (Exception e) {
+                return 0;
+                }
+            }
+        }
+    }

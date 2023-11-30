@@ -43,23 +43,27 @@ public class Tasks {
                 System.out.println(el);
             }
         } else if (choice.equals("2")) {
-            System.out.println("Ievadiet indeksu");
-            int i = sc.nextInt();
-            System.out.println(stringList.get(i));
+            try {
+                System.out.println("Ievadiet indeksu");
+                int i = sc.nextInt();
+                System.out.println(stringList.get(i));
+            }catch (Exception ex){
+                System.out.println("Nepareiza ievade");
+            }
         } else {
             System.out.println("Nepareiza ievade!");
         }
     }
 
     public static int task3() {
-        Scanner sc = new Scanner(System.in);
         System.out.println("Ievadiet skaitli!");
+        Scanner sc = new Scanner(System.in);
         int number;
         try {
             number = sc.nextInt();
         }
         catch (Exception e) {
-            return 0;
+            number = 0;
         }
         return number;
     }
