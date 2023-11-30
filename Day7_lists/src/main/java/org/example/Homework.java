@@ -39,7 +39,24 @@ public class Homework {
                 System.out.println(number);
             } catch (Exception e) {
                 return 0;
-                }
             }
         }
     }
+
+    public static int hometaskDay7var() {
+
+        int number = 0;
+        boolean done = false;
+        while (done == false) {
+            System.out.println("Lūdzu, ievadiet skaitli!");
+            Scanner sc = new Scanner(System.in);
+            try {
+                number = sc.nextInt();
+                done = true;
+            } catch (Exception e) {
+                System.out.println("Ievades kļūda");
+            }
+        }
+        return number;
+    }
+}
