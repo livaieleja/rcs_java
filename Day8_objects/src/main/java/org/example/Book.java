@@ -6,12 +6,18 @@ public class Book {
     public String title;
     public String year;
 
+    public Book (){
+        this.name = "";
+        this.lastName = "";
+        this.title = "";
+        this.year  = "";
+    }
 
-//    public Book(String name, String lastName, String title, int year){ // šo sauc par konstruktoru!!!
-//    this.name = name;
-//    this.lastName = lastName;
-//    this.year = year;
-//}
+    public Book(String name, String lastName, String title, String year){ // šo sauc par konstruktoru!!!
+    this.name = name;
+    this.lastName = lastName;
+    this.year = year;
+}
 
     public void print(){
         System.out.println(name + " " + lastName);
