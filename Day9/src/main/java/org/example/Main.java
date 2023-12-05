@@ -1,15 +1,19 @@
 package org.example;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Tools tools = new Tools();
+        List<Pet> pets = Tools.createPetList();
+        Tools.addPet(pets);
 
-        List<Pet> petList = tools.createPetList();
+        printLst(pets);
 
-        tools.addPetsToList(petList);
-
-        tools.showPetList(petList);
+    }
+    private static void printLst (List<Pet> pets){
+        for (var pet: pets){
+            pet.print();
+        }
     }
 }
