@@ -1,0 +1,43 @@
+CREATE TABLE Authors (
+    Authorid INTEGER PRIMARY KEY,
+    name TEXT (30)NOT NULL,
+    surname TEXT (30) NOT NULL,
+    birthyear INTEGER
+);
+
+CREATE TABLE Books (
+    bookid INTEGER PRIMARY KEY,
+    title TEXT (30) NOT NULL,
+    Year INTEGER,
+    Authorid INTEGER,
+    FOREIGN KEY (AuthorId) REFERENCES Authors(Authorid)
+);
+
+INSERT INTO Authors(Authorid, name, surname, birthyear)VALUES
+(1, "Jānis", "Kalns", 1955),
+(2, "Anna", "Saule", 1962),
+(3, "Matīss", "Bērzs");
+
+INSERT INTO Books (bookid, title, year, Authorid)VALUES 
+(1, "Zeme", 1999, 1),
+(2, "Jauna diena", 2000, 1),
+(3, "Mežs", 1995, 2),
+(4, "Gliemezis", 2020, 3),
+(5, "Zaļa zāle",2023, 3);
+
+SELECT * FROM Authors; 
+
+SELECT * FROM Books; 
+
+SELECT 
+Books.title, 
+Books.year, 
+Authors.name, 
+Authors.surname,
+Authors.birthyear
+
+FROM 
+Books
+
+JOIN 
+Authors ON Books.Authorid = Authors.Authorid;
