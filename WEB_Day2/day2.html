@@ -5,15 +5,31 @@
     </head>
     <body>
         <div class="button">
-            <button id="btn1" onClick="calculateSum()">Klikskini mani!</button>
+            <button id="btn1" class = "btn1" onClick="calculateSum()">Klikskini mani!</button>
+            <button id="btn2" class = "btn2" onClick="checkNumber()">Parbaudi skaitli!</button>
+
         </div>
         <script>
             function calculateSum(){
                 let sum = 0;
-                for (let i = 0; i <= 10, i++){
+                for(let i = 1; i <= 10; i++) {
                     sum += i;
                 }
-                console.log ("Summa skaitļiem no 1 līdz 10 ir:", sum);
+                console.log ("Summa skaitliem no 1 lidz 10 ir", sum);
+            }
+
+            function checkNumber(number){
+                number = 15;
+                if (number % 3 == 0 && number % 5 == 0){
+                    console.log("FizzBuzz");
+                }else if (number % 5 == 0){
+                    console.log("Buzz");
+                }else if (number % 3 == 0){
+                    cocsole.log("Fizz");
+                }else{
+                    console.log("Skaitlis nedalas ne ar 3, ne ar 5");
+                }
+                
             }
         </script>
     </body>
