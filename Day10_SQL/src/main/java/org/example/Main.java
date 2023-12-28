@@ -1,7 +1,10 @@
 package org.example;
 
+import java.sql.Connection;
+
 public class Main {
     public static void main(String[] args) {
-      Connect.connect();
+      Connection conn = Connect.connect();
+      Connect.readArtists(conn);
     }
 }

@@ -20,17 +20,18 @@ public class Connect {
         return conn;
     }
 
-    public static void readArtists(){
+    public static void readArtists(Connection conn){
         String sql = "SELECT * FROM artists";
 
         try {
-            Statement stm = new conn.createStatement();
-            ResultSet rs = stm.getResultSet();
+            Statement stm = conn.createStatement();
+            ResultSet rs = stm.executeQuery(sql);
 
             while (rs.next()){
                 System.out.println(rs.getString("Name"));
             }
         }catch(Exception e){
+            System.out.println(e.getMessage());
         }
     }
 }
