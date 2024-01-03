@@ -4,20 +4,18 @@
         <link rel = "stylesheet" href ="style.css">
     </head>
     <body>
-        <input typ ="number" id="numberInput" placeholder="Ievadi skaitli!">
-        <button id ="checkNumber">Parbaudi skaitli!</button>
+        <input type ="number" id="numberInput" placeholder="Ievadi skaitli!">
+        <button id ="checkNumber" onClick="task1()">Parbaudi skaitli!</button>
         <script>
-            function checkNumber(){
-            document.getElementById("checkNumber");
-            var inputField = document.getElementById("numberInput");
-            var number = parseInt(InputField.value);
+            function task1(){
+                let userInput = document.getElementById("numberInput");
 
-            if (number % 2 == 0){
-                inputField.className = "green";
+            if (userInput.value % 2 == 0){
+               userInput.style.backgroundColor = "green";
             }else{
-                inputField.className = "red";
+                userInput.style.backgroundColor = "red";
             }
-        };
+        }
         </script>
     </body>
 

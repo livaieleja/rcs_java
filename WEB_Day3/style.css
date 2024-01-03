@@ -4,6 +4,8 @@
 }
 .checkButton{
     padding: 10px;
+    background-color: beige;
+    color: black;
 }
 .red{
     background-color: red;
