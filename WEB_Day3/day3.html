@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Tresas dienas uzdevums</title>
+        <link rel = "stylesheet" href ="style.css">
+    </head>
+    <body>
+        <input typ ="number" id="numberInput" placeholder="Ievadi skaitli!">
+        <button id ="checkNumber">Parbaudi skaitli!</button>
+        <script>
+            function checkNumber(){
+            document.getElementById("checkNumber");
+            var inputField = document.getElementById("numberInput");
+            var number = parseInt(InputField.value);
+
+            if (number % 2 == 0){
+                inputField.className = "green";
+            }else{
+                inputField.className = "red";
+            }
+        };
+        </script>
+    </body>
+
+</html>
