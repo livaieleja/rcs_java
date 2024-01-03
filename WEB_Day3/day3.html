@@ -5,8 +5,14 @@
     </head>
     <body>
         <input type ="number" id="numberInput" placeholder="Ievadi skaitli!">
-        <button id ="checkNumber" onClick="task1()">Parbaudi skaitli!</button>
+        <button id ="checkNumber" button class="btn2" onClick="task1()">Parbaudi skaitli!</button>
+
+        <p> Otrais uzdevumus</p>
+        <button class ="btn2" onClick="task2()">Cik reizes!</button>
+
         <script>
+            let count = 0;
+
             function task1(){
                 let userInput = document.getElementById("numberInput");
 
@@ -15,6 +21,11 @@
             }else{
                 userInput.style.backgroundColor = "red";
             }
+        }
+
+        function task2(){
+            count++;
+            alert (count);
         }
         </script>
     </body>
