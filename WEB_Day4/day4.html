@@ -1,32 +1,55 @@
 <html>
     <head>
+        <meta charset="UTF-8"> 
         <title>Ceturta diena</title>
         <link rel = "stylesheet" href ="style.css">
     </head>
     <body>
         <p> Pirmais uzdevums</p>
-        <input type ="text" id="numberInput" placeholder="Ievadi skaitlu virkni!">
-        <button id ="checkNumber" button class="btn1" onClick="task1()">Paradi skaitlus!</button>
+        <input type ="text" id="numberInput" placeholder="Ievadi skaitļu virkni!">
+        <button id ="checkNumber" button class="btn1" onClick="task1()">Parādi skaitļus!</button>
+
+        <p> Otrais uzdevums</p>
+        <input type ="text" id="numberInput2" placeholder="Ievadi skaitļu virkni!">
+        <button id ="duplicateNumbers" button class="btn2" onClick="task2()">Pārbaudi skaitļus!</button>
+
 
         <script>
 
             function task1(){
                 let userInput = document.getElementById("numberInput").value;
                 let numbers = userInput.split (",");
-                let max = numbers[0];
-                let min = numbers[0];
+                let max = parseInt(numbers[0]);
+                let min = parseInt(numbers[0]);
 
                 for (let i=0; i < numbers.length; i++){
                     if (numbers[i]>max){
-                        max = numbers[i];
+                        max = parseInt(numbers[i]);
                     }
                     if (numbers[i]<min){
-                        min = numbers[i];
+                        min = parseInt(numbers[i]);
                     }
                 }
 
-                alert ("Lielakais skaitlis ir " + max + " Mazakais skaitlis ir " + min);
+                alert ("Lielākais skaitlis ir " + max + " / Mazākais skaitlis ir " + min);
 
+        }
+
+            function task2(){
+                let userInput = document.getElementById("numberInput2").value;
+                let numbers = userInput.split (",");
+                let result = "Neviens skaitlis nav ievadīts divas reizes!" ;
+
+                for (let i = 0; i < numbers.length; i++){
+                    for (let j = i + 1; j < numbers.length; j++){
+                        if (numbers[i]==numbers[j]){
+                            result = "Skaitlis " + numbers[i] + " ir ievadīts divas reizes";
+                        }
+                    }
+                    if (result !== "Neviens skaitlis nav ievadīts divas reizes!"){
+                    }
+                }
+                alert (result);
         }
         </script>
     </body>
