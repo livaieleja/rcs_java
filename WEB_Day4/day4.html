@@ -13,6 +13,13 @@
         <input type ="text" id="numberInput2" placeholder="Ievadi skaitļu virkni!">
         <button id ="duplicateNumbers" button class="btn2" onClick="task2()">Pārbaudi skaitļus!</button>
 
+        <p> Trešais uzdevums</p>
+        <input type ="text" id="numberInput3" placeholder="Ievadi skaitļu virkni!">
+        <button id ="numbers" button class="btn3" onClick="saveArray()">Gatavs!</button>
+        <input type ="text" id="numberInput4" placeholder="Ievadi vienu skaitli!!">
+        <button id ="searchNumbers" button class="btn3" onClick="searchNumber()">Pārbaudi skaitli!</button>
+        <p id="searchResult">Skaitlis ir vai nav ievadītajā skaitļu virknē?</p>
+
 
         <script>
 
@@ -49,6 +56,28 @@
                 }
                 alert (result);
         }
+            let array = [];
+
+            function saveArray(){
+                let userInput = document.getElementById("numberInput3").value;
+                array = userInput.split (",");
+                alert("Skaitļi ir ievadīti!")
+        }
+            function searchNumber(){
+                let numberToSearch = Number(document.getElementById("numberInput4").value);
+                let foundNumber = false;
+
+                for (let i = 0; i < array.length; i++){
+                    if (array[i] == numberToSearch){
+                        foundNumber = true;
+                    }
+                }
+                if (foundNumber){
+                    document.getElementById("searchResult").innerText = "Skaitlis " + numberToSearch + " ir skaitļu virknē!";
+                }else{
+                    document.getElementById("searchResult").innerText = "Skaitlis " + numberToSearch + " nav skaitļu virknē!";
+                } 
+            }
         </script>
     </body>
 </html>
