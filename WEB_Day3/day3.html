@@ -4,11 +4,15 @@
         <link rel = "stylesheet" href ="style.css">
     </head>
     <body>
+        <p> Pirmais uzdevums</p>
         <input type ="number" id="numberInput" placeholder="Ievadi skaitli!">
         <button id ="checkNumber" button class="btn2" onClick="task1()">Parbaudi skaitli!</button>
 
-        <p> Otrais uzdevumus</p>
+        <p> Otrais uzdevums</p>
         <button class ="btn2" onClick="task2()">Cik reizes!</button>
+
+        <p> Otrais piemers</p>
+        <button class ="btn2" onClick="sample3()">Masivi!</button>
 
         <script>
             let count = 0;
@@ -25,7 +29,22 @@
 
         function task2(){
             count++;
-            alert (count);
+            alert ("Tu esi klikskinajis " + count + " reizes!");
+        }
+
+        function sample2(){
+            const num = [1, 4, 7, 10, 15];
+            for (let i=0; i < num.lenght; i++){
+                alert (num[i])
+            }
+        }
+
+        function sample3(){
+            let text = "1,4,7,10,15";
+            let arr = text.split(",");
+            for (let i=0; i<arr.lenght; i++){
+            alert (parseInt(arr[i])+4)
+            }
         }
         </script>
     </body>

@@ -1,7 +1,11 @@
-<style>
 .numberInput{
     padding: 10px;
     margin: 10px;
+}
+.checkButton{
+    background-color: green;
+    color: white;
+    padding: 10px;
 }
 .red{
     background-color: red;
@@ -9,7 +13,3 @@
 .green{
     background-color: green;
 }
-.btn2{
-    background-color: beige;
-}
-</style>
