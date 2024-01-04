@@ -38,15 +38,13 @@
             function task2(){
                 let userInput = document.getElementById("numberInput2").value;
                 let numbers = userInput.split (",");
-                let result = "Neviens skaitlis nav ievadīts divas reizes!" ;
+                let result = "Neviens skaitlis nav ievadīts vairākas reizes!" ;
 
                 for (let i = 0; i < numbers.length; i++){
                     for (let j = i + 1; j < numbers.length; j++){
                         if (numbers[i]==numbers[j]){
                             result = "Skaitlis " + numbers[i] + " ir ievadīts vairākas reizes";
                         }
-                    }
-                    if (result !== "Neviens skaitlis nav ievadīts vairākas reizes!"){
                     }
                 }
                 alert (result);
