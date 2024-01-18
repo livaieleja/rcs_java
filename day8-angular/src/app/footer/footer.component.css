@@ -1,0 +1,16 @@
+.footer {
+    overflow: hidden;
+    background-color: rgba(194, 24, 241, 0.376);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 15px;  
+}
+
+.footer a {
+    float: center;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding: 12px;
+    font-size: 14px; 
+    border-radius: 10px;
+}
