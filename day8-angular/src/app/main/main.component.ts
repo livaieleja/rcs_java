@@ -9,5 +9,4 @@ import {FormsModule} from '@angular/forms';
   styleUrl: './main.component.css'
 })
 export class MainComponent {
-
 }
