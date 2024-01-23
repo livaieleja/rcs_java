@@ -1,6 +1,8 @@
-<div>
+
   <input type="number" [(ngModel)]="number1" placeholder="Ievadiet 1.skaitli">
   <input type="number" [(ngModel)]="number2" placeholder="Ievadiet 2.skaitli">
   <button (click)="calculateDivision()">Dalīt</button>
-</div>
-  <p>Rezultāts: {{ result }}</p>
+
+  <div class="result">
+    <p>Rezultāts: {{ result }}</p>
+  </div>
