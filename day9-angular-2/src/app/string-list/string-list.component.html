@@ -1,3 +1,13 @@
+<div>
+    <input type="number" [(ngModel)]="animalIndex" placeholder="Ievadi skaitli">
+    <input type="text" [(ngModel)]="newAnimalName" placeholder="Ievadi jaunu dzīvnieka vārdu">
+    <button (click)="editAnimalName()">Izlabot vārdu</button>
+  </div>
+
+  <div *ngIf="showError" class="error-message">
+    Šāda vērtība neeksitē. Lūdzu, ievadi skaitli no 1-4.
+  </div>
+
 <div class="id" *ngFor="let person of lst">
 <p>{{person.firstName}}</p>
 <p>{{person.lastName}}</p>
