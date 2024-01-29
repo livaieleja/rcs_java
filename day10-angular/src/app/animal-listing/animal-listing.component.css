@@ -21,7 +21,8 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 8px 10px;
-    font-size: 16px;
+    font-size: 14px;
+    margin-right: 10px;
   }
   
 .button {
@@ -31,5 +32,5 @@
     padding: 8px 15px;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
   }
