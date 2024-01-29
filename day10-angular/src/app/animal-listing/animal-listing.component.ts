@@ -49,6 +49,7 @@ export class AnimalListingComponent implements OnInit{
   editAnimalName(): void {
     if (this.animalIndex >= 0 && this.animalIndex < this.lst.length) {
       this.lst[this.animalIndex].name = this.newAnimalName;
+      this.showError = false;
     } else {
       this.showError = true;
     }
