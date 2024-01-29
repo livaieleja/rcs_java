@@ -14,25 +14,25 @@ export class AnimalListingComponent implements OnInit{
     {
       name: "Hugo",
       age: 15,
-      species: "Lion",
+      species: "Lauva",
       picture:'assets/Lion.jpg',
     },
     {
       name: "Arno",
       age: 9,
-      species: "Tiger",
+      species: "Tīģeris",
       picture:'assets/Tiger.jpg',
     },
     {
       name: "Simba",
       age: 3,
-      species: "Elephant",
+      species: "Zilonis",
       picture:'assets/Elephant.jpg',
     },
     {
       name: "Rocket",
       age: 1,
-      species: "Leopard",
+      species: "Leopards",
       picture:'assets/Leopard.jpg',
     }
   ]
