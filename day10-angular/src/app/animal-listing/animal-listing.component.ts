@@ -1,6 +1,9 @@
 import { Component, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Animal } from '../animalinterface';
+import { AnimalService } from '../animal.service';
+
 
 @Component({
   selector: 'app-animal-listing',
@@ -11,39 +14,22 @@ import { FormsModule } from '@angular/forms';
 })
 export class AnimalListingComponent implements OnInit{
 
-  lst: Animal[] = [
-    {
-      name: "Hugo",
-      age: 15,
-      species: "Lauva",
-      picture:'assets/Lion.jpg',
-    },
-    {
-      name: "Arno",
-      age: 9,
-      species: "Tīģeris",
-      picture:'assets/Tiger.jpg',
-    },
-    {
-      name: "Simba",
-      age: 3,
-      species: "Zilonis",
-      picture:'assets/Elephant.jpg',
-    },
-    {
-      name: "Rocket",
-      age: 1,
-      species: "Leopards",
-      picture:'assets/Leopard.jpg',
-    }
-  ];
-
+  lst: Animal[] = [];
+   
   animalIndex!: number;
   newAnimalName!: string;
   showError: boolean = false;
-  constructor() { }
+
+  constructor(private AnimalService: AnimalService) {
+  }
   
   ngOnInit(): void {
+    this.getAnimals();
+  }
+
+  getAnimals() : void{
+    this.lst = this.AnimalService.getAnimal();
+
   }
 
   editAnimalName(): void {
@@ -54,13 +40,6 @@ export class AnimalListingComponent implements OnInit{
       this.showError = true;
     }
   }
-  
 }
 
-export interface Animal{
-  name: string;
-  age: number;
-  species: string;
-  picture: string;
-  
-}
+
