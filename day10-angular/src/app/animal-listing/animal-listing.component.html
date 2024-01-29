@@ -1,0 +1,6 @@
+<div class="animal-frame" *ngFor="let animal of lst">
+    <p>Vārds: {{animal.name}}</p>
+    <p>Vecums: {{animal.age}}</p>
+    <p>Suga: {{animal.species}}</p>   
+    <img [src]="animal.picture" alt="{{animal.name}}" class="animal-image">     
+    </div>
