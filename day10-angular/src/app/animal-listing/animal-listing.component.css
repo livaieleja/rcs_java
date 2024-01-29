@@ -1,4 +1,4 @@
-.animal-frame {
+.frame {
     width: 150px;
     padding: 8px;
     margin: 5px;
@@ -6,7 +6,7 @@
     border-radius: 4px;
 }
 
-.animal-image {
+.image {
     max-width: 100%;
     height: auto; 
     border-radius: 4px;
