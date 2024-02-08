@@ -3,9 +3,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<Employee> employees = Database.getEmployees();
-        String json = Database.convertListToJson(employees);
-        System.out.println(json);
+        Database.convertListToJson();
     }
 }
 
