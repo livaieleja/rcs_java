@@ -5,6 +5,12 @@ public class Employee {
     String lastName;
     int yearsWorked;
 
+    public Employee(String firstName, String lastName, int yearsWorked) { //konstruktors
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.yearsWorked = yearsWorked;
+    }
+
     public void displayInfo() {
         System.out.println("Informācija par darbinieku: ");
         System.out.println("Vārds: " + firstName);
