@@ -1,16 +1,23 @@
 package com.example.day232;
 
 public class Employee {
-    public int id;
-    public String firstName;
-    public String lastName;
-    public int years;
+    private int id;
+    private String firstName;
+    private String lastName;
+    private int yearsWorked;
 
-    public Employee(int id, String firstName, String lastName, int years){
+    public Employee(){
+        this.id = 0;
+        this.firstName = "";
+        this.lastName = "";
+        this.yearsWorked = 0;
+    }
+
+    public Employee(int id, String firstName, String lastName, int yearsWorked) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.years = years;
+        this.yearsWorked = yearsWorked;
     }
 }
 
