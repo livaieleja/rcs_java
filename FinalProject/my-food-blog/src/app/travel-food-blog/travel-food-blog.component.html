@@ -1,0 +1,15 @@
+<div *ngFor="let post of blogPosts" class="blog-post-container">
+  <div class="restaurant-info">
+    <h2>{{ post.country }} - {{ post.city }}</h2>
+    <h3>{{ post.restaurant }}</h3>
+    <p>{{ post.restaurantDescription }}</p>
+  </div>
+  <div *ngFor="let food of post.food" class="food-item">
+    <img [src]="food.imageURL" alt="Food Picture">
+    <div class="food-description">
+      <h4>{{ food.name }}</h4>
+      <p>{{ food.description }}</p>
+      <p>Price: {{ food.price }}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,91 @@
+.recipes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  font-family: 'Arial', sans-serif; /* Uses Arial font, but you can choose any */
+  font-weight: normal;
+  color: #333;
+}
+
+.recipe-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Equal space for image, ingredients, and instructions */
+  gap: 20px; /* Adds some space between grid items */
+  align-items: start; /* Aligns items at the start of the container */
+  width: 100%;
+  max-width: 1200px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+
+.divider {
+  grid-column: 2 / 3;
+  background-color: #333; 
+  width: 1px; 
+  margin-left: 60%; 
+  align-self: stretch; 
+}
+
+.recipe-image {
+  grid-column: 1 / 2;
+  width: 100%;
+  object-fit: cover;
+}
+
+.recipe-ingredients, .recipe-instructions {
+  padding: 15px;
+}
+
+
+.recipe-ingredients ul {
+  list-style: none; 
+  padding-left: 3; 
+}
+
+.recipe-ingredients ul li::before {
+  content: '◯';
+  display: inline-block;
+  margin-right: 10px; 
+  color: black;
+  font-size: 0.9em; 
+  vertical-align: middle; 
+}
+
+
+.recipe-instructions ol {
+  list-style-type: decimal; 
+  padding-left: 20px; 
+}
+
+.recipe-details {
+  grid-column: 2 / 4;
+  display: grid;
+  grid-template-columns: 1fr 2px 1fr; 
+}
+
+.recipe-title {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .recipe-card {
+    grid-template-columns: 1fr; 
+  }
+
+  .recipe-details {
+    grid-template-columns: 1fr; 
+  }
+
+  .divider {
+    display: none;
+  }
+}

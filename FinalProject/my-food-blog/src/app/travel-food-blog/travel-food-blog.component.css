@@ -1,0 +1,64 @@
+.blog-post-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.blog-post-container h2, .blog-post-container h3 {
+    text-align: left; 
+    position: relative;
+}
+
+.blog-post-container h2::after, .blog-post-container h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0; 
+    width: 50%;
+    height: 2px;
+    background-color: #333;
+}
+
+.blog-post-container p, .blog-post-container div {
+    text-align: justify;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.blog-post-container img {
+    float: left;
+    width: 42%;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px; 
+}
+
+.blog-post-container .food-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.blog-post-container .food-item img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.food-description {
+    flex-grow: 1;
+}
+
+.blog-post-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}

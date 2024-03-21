@@ -1,0 +1,69 @@
+{
+    "travelFoodBlog": [
+      {
+        "id":1,
+        "region": "Europe",
+        "country": "Poland",
+        "city": "Warsaw",
+        "date": "15/03/2024",
+        "restaurant": "Prosty Temat Restaurant",
+        "restaurantDescription": "A modern restaurant, situated in the Warsaw city center, it offers a unique blend of delicious cuisine and vibrant atmosphere.",
+        "food": [
+          {
+            "name": "PIDE HONGOS PIZZA / PIDE TARTUFO CON CHORIZO PIZZA",
+            "description": "This place is a paradise for pizza lovers. There is a wide selection of pizzas, each topped with the freshest ingredients and a perfect blend of flavors",
+            "price": "38 PLN (8,80 EUR) / 41 PLN (9,50 EUR)",
+            "imageURL": "assets/WPizza.jpg"
+          },
+          {
+            "name": "CLASSIC FISH & CHIPS",
+            "description": "Their Fish & Chips redefine excellence, featuring irresistibly crispy batter, perfectly moist fish, and a flavor that's worth every cent.",
+            "price": "61 PLN (14 EUR)",
+            "imageURL": "assets/WFish.jpg"
+          },
+          {
+            "name": "VERY BERRY GIN COCTAIL",
+            "description": "This gin cocktail is a masterful mix, striking the perfect balance between sweet and sour, creating a refreshing symphony of flavors",
+            "price": "36 PLN (8,40 EUR)",
+            "imageURL": "assets/WCoctail.jpg"
+          }
+        ]
+      },
+      {
+        "id":2,
+        "region": "Asia",
+        "country": "Slovakia",
+        "city": "Liptovský Mikuláš",
+        "date": "11/03/2024",
+        "restaurant": "YUZA Restaurant",
+        "restaurantDescription": "This small, incredibly cozy restaurant charms with its friendly staff and warm atmosphere, making every visitor feel like a cherished guest and the food was simply amazing.",
+        "food": [
+          {
+            "name": "HOVADZI BURGER",
+            "description": "This burger, featuring a juicy patty paired with a unique and flavorful purple coleslaw salad, presents an exceptional dish.",
+            "price": "13,90 EUR",
+            "imageURL": "assets/SBurger.jpg"
+          },
+          {
+            "name": "TAGLIATELLE S LOSOSOM NA SMOTANOVEJ OMÁČKE",
+            "description": "The pasta with salmon was so rich and creamy and the salmon melted in the mouth, served in a generously large portion.",
+            "price": "14,90 EUR",
+            "imageURL": "assets/SPasta.jpg"
+          },
+          {
+            "name": "GRILOVANÁ BRAVCOVA PANENKA",
+            "description": "This mushroom risotto, with its creamy, perfectly cooked grains and a rich, earthy flavor, offers an exquisite texture and taste that stands out as the most delicious.",
+            "price": "14,50 EUR",
+            "imageURL": "assets/SRissoto.jpg"
+          },
+          {
+            "name": "CHEESE & MEET PLATE",
+            "description": "This off-menu cheese plate, adorned with a remarkably delicious honey-mustard sauce, was so impressive that we were compelled to ask for the recipe.",
+            "price": "10,00 EUR",
+            "imageURL": "assets/SCheese.jpg"
+          }
+        ]
+      }
+    ]
+  }
+  

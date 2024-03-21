@@ -1,0 +1,21 @@
+<div class="header">
+  <div class="nav-links">
+    <button (click)="navigateToHome()">Home</button>
+    <button (click)="navigateToAboutMe()">About Me</button>
+    <div class="dropdown">
+      <button class="dropbtn">Recipes</button>
+      <div class="dropdown-content">
+        <button (click)="navigateToRecipes('sweet')">Sweet</button>
+        <button (click)="navigateToRecipes('savory')">Savory</button>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Travel Food Blog</button>
+      <div class="dropdown-content">
+        <button (click)="navigateToTravelFoodBlog('europe')">Europe</button>
+        <button (click)="navigateToTravelFoodBlog('asia')">Asia</button>
+      </div>
+    </div>
+    <button (click)="navigateToContact()">Contact</button>
+  </div>
+</div>

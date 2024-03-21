@@ -1,0 +1,25 @@
+.footer {
+  position: fixed; /* Change 'absolute' to 'fixed' to keep footer visible */
+  left: 0;
+  right: 0; /* Ensure the footer extends to the right edge */
+  bottom: 0;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #131313;
+  padding: 10px 20px; /* Apply uniform padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-right: 30px;
+}
+
+.social-icons a img {
+  width: 24px;
+  height: auto;
+}

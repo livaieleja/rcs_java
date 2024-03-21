@@ -1,0 +1,65 @@
+{
+    "travelFoodBlog": [
+      {
+        "id": "1",
+        "country": "Poland",
+        "city": "Warsaw",
+        "restaurant": "Prosty Temat",
+        "restaurantDescription": "A very popular place in the center of Warsaw. Prosty Temat offers a welcoming atmosphere and a diverse menu. Totally recommend this place, but definitely need to make a reservation before.",
+        "picture":"/Users/livaieleja/Desktop/Kursi - RCS/JAVA/rcs_java/Final/Images/WProsty.jpg",
+        "food": [
+          {
+            "name": "PIZZA PIDE",
+            "description": "We tried PIDE HONGOS and PIDE TARTUFO CON CHORIZO. They were realy tasty and with a variety of toppings to choose from.",
+            "price": "38 PLN (8.70 EUR) / 41 PLN (9.50 EUR)",
+            "picture": "/Users/livaieleja/Desktop/Kursi - RCS/JAVA/rcs_java/Final/Images/WPizza.jpg"
+          },
+          {
+            "name": "CLASSIC FISH & CHIPS",
+            "description": "The batter was perfectly crispy and the fish was juicy and tender.",
+            "price": "61 PLN (14 EUR)",
+            "picture": "/Users/livaieleja/Desktop/Kursi - RCS/JAVA/rcs_java/Final/Images/WFish.jpg"
+          },
+          {
+            "name": "VERY BERRY COCTAIL",
+            "description": "The coctail was a perfecion of sweet and sour.",
+            "price": "36 PLN (8,30 EUR)",
+            "picture": "/Users/livaieleja/Desktop/Kursi - RCS/JAVA/rcs_java/Final/Images/WCoctail.jpg"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "country": "Slovakia",
+        "city": "Liptovsky Mikulas",
+        "restaurant": "YUZA Restaurant",
+        "restaurantDescription": "Modern, intimate setting with exceptionally friendly staff and good food.",
+        "food": [
+            {
+                "name": "CHEESE AND MEAT PLATE",
+                "description": "This plate was not on the menu but we asked for it separately and it was excellent. The honey-mustard sauce was so good that we asked for the recipe.",
+                "price": "10 EUR",
+                "picture": "/Users/livaieleja/Desktop/Kursi - RCS/JAVA/rcs_java/Final/Images/SCheese.jpg"
+              },
+          {
+            "name": "HOVADZI BURGER",
+            "description": "A masterclass in flavor and texture, featuring a handcrafted, juicy beef patty that was grilled to perfection",
+            "price": "13,90 EUR",
+            "picture": "/Users/livaieleja/Desktop/Kursi - RCS/JAVA/rcs_java/Final/Images/SBurger.jpg"
+          },
+          {
+            "name": "GRILOVANE KUSKY LOSOSA TAGLIATELLE",
+            "description": "This mushroom rissotto was cooked to perfection. All dishes were amazing and we would definitely go back to this place.",
+            "price": "13,90 EUR",
+            "picture": "/Users/livaieleja/Desktop/Kursi - RCS/JAVA/rcs_java/Final/Images/SRisoto.jpg"
+          },
+          {
+            "name": "GRILOVANA BRAVCOVA PANENKA, DUBAKOVE RIZOTO",
+            "description": "",
+            "price": "14,50 EUR",
+            "picture": "/Users/livaieleja/Desktop/Kursi - RCS/JAVA/rcs_java/Final/Images/SPasta.jpg"
+          }
+        ]
+      }
+    ]
+  }
